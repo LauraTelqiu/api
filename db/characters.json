@@ -1,0 +1,92 @@
+ [
+  {
+    "character": "Rachel Karen Green",
+    "portrayedBy":"Jennifer Aniston",
+    "image":"https://i.imgur.com/0gYgi.jpeg",
+    "birthYear":"1969"
+    
+   
+  },
+  {
+    "character": "Monica Geller",
+    "portrayedBy":"Courteney Cox", 
+    "image":"https://i.imgur.com/isDJgav.jpeg",
+    "birthYear":"1964"
+    
+   
+  },
+  {
+    "character": "Phoebe/Ursula Buffay",
+    "portrayedBy":"Lisa Kudrow" ,
+    "image":"https://i.imgur.com/ed1h7YX.jpeg",
+    "birthYear":"1963"
+   
+   
+  },
+  {
+    "character": "Joey Tribbiani Jr.",
+    "portrayedBy":"Matt LeBlanc", 
+    "image":"https://i.imgur.com/1hZoX0l.jpeg",
+    "birthYear":"1967"
+   
+   
+  },
+  {
+    "character": "Chandler Muriel Bing",
+    "portrayedBy":"Matthew Perry",
+    "image":"https://i.imgur.com/CcCZczz.jpeg",
+    "birthYear":"1969"
+    
+   
+  },
+  {
+    "character": "Ross Geller",
+    "portrayedBy":"David Schwimmer",
+    "image":"https://i.imgur.com/6ZaVgLv.jpeg",
+    "birthYear":"1966"
+    
+   
+  },
+  {
+    "character": "Gina Tribbiani",
+    "portrayedBy":"Drea de Matteo", 
+    "image":"https://i.imgur.com/Z77Mspo.jpeg",
+    "birthYear":"1972"
+   
+   
+  },
+  {
+    "character": "Alex Garrett",
+    "portrayedBy":"Andrea Anders",
+    "image":"https://i.imgur.com/ml5xkAo.jpeg",
+    "birthYear":"1975"
+ 
+   
+  },
+  {
+    "character": "Michael Tribbiani",
+    "portrayedBy":"Paulo Costanzo",
+    "image":"https://upload.wikimedia.org/wikipedia/commons/a/a8/Paulo_Costanzo_photo_closeup.jpg" ,
+    "birthYear":"1978"
+  
+   
+  },
+  {
+    "character": "Bobbie Morganstern",
+    "portrayedBy":"Jennifer Coolidge",
+    "image":"https://i.imgur.com/hZeTSeO.jpeg",
+    "birthYear":"1961"
+ 
+   
+  },
+  {
+    "character": "Howard",
+    "portrayedBy":"Ben Falcone", 
+    "image":"https://upload.wikimedia.org/wikipedia/commons/2/25/Ben_Falcone_2016.jpg",
+    "birthYear":"1973"
+    
+   
+  }
+  
+  
+  ]

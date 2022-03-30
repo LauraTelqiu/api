@@ -4,14 +4,13 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon ./api/server.js"
+    "start": "node ./api/server.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "express": "^4.17.3",
-    "mongoose": "^6.2.9",
-    "nodemon": "^2.0.15"
+    "mongoose": "^6.2.9"
   }
 }

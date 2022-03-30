@@ -1,4 +1,4 @@
-let { Character } = require("../db/model");
+let { Character } = require("../db/index");
 
 // Import Express
 let express = require("express");

@@ -1,10 +1,10 @@
 let mongoose = require("mongoose");
-let mongooseConfig = { useNewUrlParser: true, useUnifiedTopology: true };
+let mongooseConfig = { useUnifiedTopology: true };
 
 mongoose.connect("mongodb://127.0.0.1:27017/friends-cast", mongooseConfig);
 
 // Import character JSON file
-let characters = require("./characters.json");
+let characters = require("../db/characters.json");
 
 //Import model
 let Character = mongoose.model(
@@ -16,5 +16,10 @@ let Character = mongoose.model(
     birthYear: { type: Number },
   })
 );
+
+Character.deleteMany({})
+  .then(() => Character.create(characters))
+  .then((characters) => console.log("Done"))
+  .catch((error) => console.error(error));
 
 module.exports = { Character };

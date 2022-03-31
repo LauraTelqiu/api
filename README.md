@@ -1,27 +1,45 @@
-# API-Project
+# Friends TV Show API
 
-API for geting data about the episodes of TV show Friends
+API for geting data about the tv show Friends.
+
+## About
+
+Every episode represents:
+
+Year of production based on IMDB
+Season of the Friends show
+The title of the episode, starting with 'The one with ...'
+Duration of episode by minutes
+Summary of the episode in a few lines
+Director of that specific episode
+IMDB rating of that episode
 
 ## Endpoints
 
-POST/ - Creates episodes
-GET/ - Reads episodes
-PUT/ - Updates episodes
-DELETE/ -Deletes episodes
+| Method | Endpoint     | Description               |
+| :----- | :----------- | :------------------------ |
+| POST   | /episodes    | Creates episodes.         |
+| GET    | /episodes    | Reads all eposisodes.     |
+| GET    | /episode/:id | Reads a specific episode. |
+| PUT    | /episode/:id | Updates an episode.       |
+| DELETE | /episode/:id | Deletes an episode.       |
 
-## JSON Schema
+##### JSON Schema
 
-Year_of_prod: type: Number
-Season: type: Number
-Episode_Title: type: String
-Duration: type: Number
-Summary: type: String
-Director: type: String
-Stars: type: Number
-Votes: type: Number
+| Name               | Type   |
+| :----------------- | :----- |
+| **Year_of_prod:**  | Number |
+| **Season:**        | Number |
+| **Episode_Title:** | String |
+| **Duration:**      | Number |
+| **Summary:**       | String |
+| **Director:**      | String |
+| **Stars:**         | Number |
 
 ### Technology Used
 
-Javascript,Express,Mongoose,
+JavaScript,Express,Mongoose
 
-### Data Structures
+# Data Source
+
+"https://www.kaggle.com/datasets/rezaghari/friends-series-dataset"

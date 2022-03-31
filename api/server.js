@@ -1,4 +1,4 @@
-let { episode } = require("../db/index");
+let { episode } = require("./index");
 
 // Import Express
 let express = require("express");
@@ -11,12 +11,18 @@ let app = express();
 // Express app handle JSON in HTTP requests
 app.use(express.json());
 
-// Create
-// app.post("/episode", (request, response) => {
-//   episode.create(request.body).then((episode) => {
-//     response.json(episode);
-//   });
-// });
+//Create
+app.post("/episode", async (request, response) => {
+  let newepisode = request.body;
+  let created = await episode.create(newepisode);
+  response.send(created);
+});
+
+// Read All
+app.get("/episode", async (request, response) => {
+  let episodes = await episode.find({});
+  response.send(episodes);
+});
 
 // Read Specific episode by id
 app.get("/episode/:id", async (request, response) => {
@@ -25,19 +31,6 @@ app.get("/episode/:id", async (request, response) => {
   let selectedEpisode = await episode.findById(id);
   console.log(episode);
   response.send(selectedEpisode);
-});
-
-//Create
-app.post("/episode", async (request, response) => {
-  let newepisode = request.body;
-  let created = await episode.create(newepisode);
-  response.send(created);
-});
-
-// Read
-app.get("/episode", async (request, response) => {
-  let episodes = await episode.find({});
-  response.send(episodes);
 });
 
 //Update

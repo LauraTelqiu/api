@@ -39,7 +39,3 @@ IMDB rating of that episode
 ### Technology Used
 
 JavaScript,Express,Mongoose
-
-# Data Source
-
-"https://www.kaggle.com/datasets/rezaghari/friends-series-dataset"

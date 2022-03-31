@@ -1,25 +1,30 @@
 let mongoose = require("mongoose");
 let mongooseConfig = { useUnifiedTopology: true };
 
-mongoose.connect("mongodb://127.0.0.1:27017/friends-cast", mongooseConfig);
+mongoose.connect("mongodb://127.0.0.1:27017/friends", mongooseConfig);
 
-// Import character JSON file
-let characters = require("../db/characters.json");
+// Import friends JSON file
+let episodes = require("../db/friends.json");
 
 //Import model
-let Character = mongoose.model(
-  "Character",
+let episode = mongoose.model(
+  "episode",
   new mongoose.Schema({
-    character: { type: String },
-    portrayedBy: { type: String },
-    image: { type: String },
-    birthYear: { type: Number },
+    Year_of_prod: { type: Number },
+    Season: { type: Number },
+    Episode_Title: { type: String },
+    Duration: { type: Number },
+    Summary: { type: String },
+    Director: { type: String },
+    Stars: { type: Number },
+    Votes: { type: Number },
   })
 );
 
-Character.deleteMany({})
-  .then(() => Character.create(characters))
-  .then((characters) => console.log("Done"))
+episode
+  .deleteMany({})
+  .then(() => episode.create(episodes))
+  .then((episodes) => console.log("Done"))
   .catch((error) => console.error(error));
 
-module.exports = { Character };
+module.exports = { episode };
